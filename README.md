@@ -43,6 +43,70 @@ This guide is ideal for:
 3. Try out the code examples in your own TypeScript environment
 4. Refer back to specific sections as needed in your projects
 
+## Setting Up and Running TypeScript
+
+### Prerequisites
+
+- Node.js
+- npm (Node Package Manager)
+
+### Setup
+
+1. Clone this repository
+2. Navigate to the project directory
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+### Building and Running
+
+Build TypeScript files:
+
+```bash
+npm run build
+```
+
+Run compiled JavaScript:
+
+```bash
+npm start
+```
+
+### Development Mode
+
+Run with auto-reloading:
+
+```bash
+npm run dev
+```
+
+### Scripts Explanation
+
+```json
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
+```
+
+1. build: Compiles TypeScript to JavaScript
+2. start: Runs compiled JavaScript
+3. dev: Runs TypeScript with auto-reload
+4. test: Placeholder for tests
+
+Project Structure
+
+- src/: TypeScript source files
+- dist/: Compiled JavaScript files
+- package.json: Project dependencies and scripts
+- tsconfig.json: TypeScript compiler configuration
+
 ## Contributing
 
 Feel free to submit pull requests if you have suggestions for improvements or additional content that would benefit beginners learning TypeScript.
